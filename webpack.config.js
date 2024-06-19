@@ -25,9 +25,17 @@ const ruleForJavaScript = {
 
 const rules = [ ruleForJavaScript,ruleForStyles];
 
-module.exports = {
+module.exports = (env,argv) => {
+    const {mode} = argv;
+
+    const isProduction = mode === 'production';
+    //const isDevelopment = mode === 'development';
     //entry: './src/index.js',
+    return {
     output: {
+        filename: isProduction 
+        ? '[name].[contenthash].js' 
+        : 'main.js',
         path: path.resolve(__dirname, 'build'),
     },
     plugins:[
@@ -45,6 +53,7 @@ module.exports = {
         
     },
     //devtool: 'source-map'
+}
 }
 
 
