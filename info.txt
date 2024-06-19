@@ -17,3 +17,5 @@ modificar el package.json en
 
 - npm install react react-dom -E                             
 - npm install @babel/core babel-loader @babel/preset-react -D
+
+- npm install style-loader css-loader -D

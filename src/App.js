@@ -1,5 +1,10 @@
 //import React from "react";
 
-const App = () => <h1>Hello, World!</h1>;
+const App = () =>( 
+<div className="container">
+<h1>Hello, World!</h1> 
+</div>
+);
+
 
 export default App;

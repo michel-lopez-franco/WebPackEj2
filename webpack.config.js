@@ -1,5 +1,10 @@
 const path = require('path');
 
+const ruleForStyles = {
+    test: /\.css$/,
+    use: ['style-loader', 'css-loader'],
+};
+
 const ruleForJavaScript = {
         test: /\.js$/,
         loader: 'babel-loader',
@@ -16,7 +21,7 @@ const ruleForJavaScript = {
     }
 
 
-const rules = [ ruleForJavaScript];
+const rules = [ ruleForJavaScript, ruleForStyles];
 
 module.exports = {
     //entry: './src/index.js',
