@@ -1,0 +1,19 @@
+
+- npm init -y
+
+- npm install webpack webpack-cli D
+
+Generar carpeta de src 
+
+
+modificar el package.json en 
+
+ "scripts": {
+    "build": "webpack --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  
+- npm run build
+
+- npm install react react-dom -E                             
+- npm install @babel/core babel-loader @babel/preset-react -D
